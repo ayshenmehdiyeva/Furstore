@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: "Jost", sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* Header*/
+
+section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 0px 140px 0px 140px;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+.about-us div {
+    height: auto;
+    width: 100%;
+}
+
+.name {
+    width: 100%;
+    font-size: 30px;
+    color: #202020;
+    font-weight: 800;
+    font-family: "Jost", sans-serif;
+    text-transform: uppercase;
+}
+
+.choose-us img,
+.online-shopping img {
+    height: auto;
+    min-width: 100%;
+}
+
+.choose-us,
+.online-shopping {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.Kwang-Shang {
+    width: 100%;
+    height: 290px;
+    padding: 10px;
+    background-color: #d5d5d587;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.Kwang-Shang img {
+    max-width: 100%;
+    height: auto;
+}
+
+.kwang-info {
+    max-width: 800px;
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.kwang-text {
+    color: #232630;
+    font-size: 22px;
+    line-height: 40px;
+}
+
+.kwang-text span {
+    font-size: 13px;
+    font-weight: 600;
+    color: #232630;
+}
+
+.choose-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.choose-us span,
+.online-shopping span {
+    color: #0d2235;
+    font-size: 22px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    font-weight: 800;
+}
+
+.choose-us p,
+.online-shopping p {
+    font-size: 16px;
+    color: #505157;
+    line-height: 1.9;
+    letter-spacing: 0px;
+    text-transform: none;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: #d9d9d9;
+}
+
+.online-shopping {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+/*Responsive */
+
+
+/* Ümumi üslub */
+
+/*
+section {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: block;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.Kwang-Shang {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.Kwang-Shang img {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+}
+
+.kwang-info {
+    max-width: 600px;
+    text-align: left;
+}
+
+.choose-us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.choose-us div {
+    max-width: 600px;
+    text-align: center;
+}
+
+.choose-us img {
+    max-width: 100%;
+    height: auto;
+}
+
+.online-shopping {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.online-shopping div {
+    max-width: 600px;
+    text-align: center;
+}
+
+.online-shopping img {
+    max-width: 100%;
+    height: auto;
+}
+*/
+
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.web-footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 10px 50px 10px 50px;
+}
+
+.web-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.web-info p {
+    color: #000000;
+    text-align: left;
+    width: 190px;
+}
+
+.web-info div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+tr th {
+    text-align: left;
+}
+
+p {
+    color: #000;
+}
+
+.search-email {
+    width: 100%;
+    display: flex;
+    height: 42px;
+    border: 3px solid #0a5d5d;
+    border-radius: 5px;
+    background-color: #5c5c5c !important;
+}
+
+input {
+    padding-left: 15px;
+}
+
+.search-email button {
+    background-color: #0a5d5d;
+    border-left: 3px solid #0a5d5d;
+    width: 60%;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.search-email button:hover {
+    background: none;
+    color: #000;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-radius: 2px 0px 0px 3px;
+}
+
+.search {
+    width: 200px;
+    border-radius: 5px;
+}
+
+input,
+button {
+    outline: none;
+    border: none;
+}
+
+
+footer ul {
+    width: auto;
+    list-style: none;
+    line-height: 40px;
+    background-color: #ffffff;
+}
+
+.web-info p,
+ul li {
+    font-size: 15px;
+    color: #778082;
+    cursor: pointer;
+}
+
+.footer-header,
+.footer-search p {
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 630 !important;
+    position: relative;
+    color: #000000;
+}
+
+.fa-solid,
+.fa-regular {
+    color: #5c5c5c;
+    margin-right: 17px;
+}
+
+.footer-search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fa-brands {
+    margin-top: 20px;
+    margin-right: 15px;
+    width: 24px;
+    height: 24px;
+}
+
+
+@media (max-width: 1200px) {
+    .web-footer {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 0px;
+
+    }
+
+    .footer-search {
+        width: 100%;
+    }
+
+    .search-email {
+        width: 100%;
+    }
+
+
+}
+
+
+@media (max-width: 780px) {
+    .web-footer {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 0px;
+
+    }
+
+    .footer-search {
+        width: 100%;
+    }
+
+    .search-email {
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1100px) {
+    .about-us {
+        text-align: center;
+    }
+
+    .kwang-text {
+        font-size: 18px;
+    }
+
+    .choose-us,
+    .online-shopping {
+        flex-direction: column;
+    }
+
+    .kwang-info {
+        text-align: center;
+    }
+}
+
+
+
+@media (max-width: 950px) {
+    .about-us {
+        text-align: center;
+    }
+
+    .kwang-text {
+        font-size: 18px;
+    }
+
+    .choose-us,
+    .online-shopping {
+        flex-direction: column;
+    }
+
+    .kwang-info {
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .about-us {
+        text-align: center;
+    }
+
+    .kwang-text {
+        font-size: 14px;
+    }
+
+    .choose-us,
+    .online-shopping {
+        flex-direction: column;
+    }
+
+    .kwang-info {
+        text-align: center;
+    }
+
+    .kwang-text {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .web-info div {
+        justify-content: flex-start;
+    }
+
+    section {
+        padding: 0px 70px 0px 70px;
+    }
+    
+}
+
+@media (max-width: 620px) {
+    .about-img {
+        max-width: 100%;
+    }
+
+    .choose-us div,
+    .online-shopping div {
+        text-align: left;
+    }
+
+    .kwang-text {
+        font-size: 7px;
+        line-height: 20px;
+    }
+}

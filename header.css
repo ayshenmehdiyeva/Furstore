@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+/* ---->  Header   <----------*/
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff;
+
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon i {
+    font-size: 25px;
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    margin-bottom: 0;
+    margin-top: 0;
+    gap: 1rem;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.navbar {
+    padding: 1.7rem 0 !important;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #222;
+    cursor: pointer;
+    font-family: "Jost", sans-serif;
+    font-size: 16px;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    position: relative;
+}
+
+.collection-height {
+    height: 300px;
+}
+
+.product-height {
+    height: 400px;
+    z-index: 2;
+}
+
+.about-position {
+    position: absolute;
+    left: 53%;
+}
+
+.blog-position {
+    position: absolute;
+    left: 60%;
+}
+
+.blog-height {
+    height: 300px;
+}
+
+.about-drop-down {
+    display: none;
+    /* sonda none*/
+    padding-top: 10px;
+    animation-name: dropdown;
+    animation-delay: 0.0s;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    transition: all 0.5s ease;
+    opacity: 0;
+    z-index: 2;
+}
+
+
+@keyframes dropdown {
+    0% {
+        top: 90px;
+        bottom: 0px;
+        opacity: 0.5;
+    }
+
+    100% {
+        top: 60px;
+        bottom: 10px;
+        opacity: 1;
+    }
+}
+
+.blog-height {
+    height: 300px;
+}
+
+.about-height {
+    height: 300px;
+}
+
+.about-drop-down div ul {
+    width: 200px;
+    background-color: #fff;
+    font-family: "Jost", sans-serif;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.about:hover .about-drop-down {
+    display: block;
+    opacity: 1;
+}
+
+
+
+
+.drop-down {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 0px;
+    display: none;
+    /* sonda none*/
+    padding-top: 10px;
+    animation-name: dropmove;
+    animation-delay: 0.0s;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    transition: all 0.5s ease;
+    opacity: 0;
+    z-index: 3;
+}
+
+
+@keyframes dropmove {
+    0% {
+        left: 0px;
+        top: 90px;
+        bottom: 0px;
+        opacity: 0.5;
+    }
+
+    100% {
+        left: 0px;
+        top: 60px;
+        bottom: 10px;
+        opacity: 1;
+    }
+}
+
+
+.about-drop-down ul {
+    padding-top: 20px;
+}
+
+.about-drop-down ul li a {
+    padding-bottom: 0px;
+    font-size: 14px;
+    text-transform: capitalize;
+    display: block;
+    color: #778082;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 2s ease;
+    font-family: "Jost", sans-serif;
+}
+
+
+
+
+
+.collection-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.product-content {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.dropdown-content {
+    width: 100%;
+    height: 100%;
+    padding-left: 130px;
+}
+
+
+.dropdown-content ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    margin-left: 80px;
+}
+
+nav ul li:hover .drop-down {
+    display: block;
+    opacity: 1;
+}
+
+.drop-down:hover {
+    display: block;
+    opacity: 1;
+}
+
+.dropdown-content-right {
+    display: flex;
+    flex-direction: row;
+}
+
+.dropdown-content-right ul,
+.dropdown-content-left ul {
+    padding: 0px;
+    height: 237px;
+}
+
+
+
+.dropdown-content-right ul li a,
+.product-right ul li a {
+    padding-bottom: 0px;
+    font-size: 14px;
+    text-transform: capitalize;
+    display: block;
+    color: #778082;
+    cursor: pointer;
+    transition: all 2s ease;
+}
+
+.dropdown-content-right ul li a:hover {
+    color: #18604d;
+}
+
+
+.blog-height {
+    width: 200px;
+    height: 360px;
+}
+
+.menu-name {
+    font-size: 25px;
+    height: 25px;
+    color: #202020;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.product-slider {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Slider*/
+
+
+.mySwiper2.swiper {
+    width: 250px;
+    height: 280px;
+}
+
+.mySwiper2 .swiper-slide {
+    width: 250px !important;
+    height: 280px !important;
+    text-align: center;
+    font-size: 18px;
+    background: #ffffff;
+    display: flex;
+    margin-left: 0%;
+}
+
+.mySwiper2 .swiper-slide img {
+    display: block;
+    width: 165px;
+    height: 204px;
+    object-fit: cover;
+}
+
+.autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+    opacity: 0;
+}
+
+.autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+    opacity: 0;
+}
+
+.product-slider-name {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.product-slider-price {
+    font-size: 12px;
+    font-weight: 500;
+    color: #778082;
+    text-align: center;
+}
+
+
+/*Responsive dizayn*/
+
+
+
+
+/*@media (max-width: 1200px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px 10px 20px;
+    }
+
+    .icon{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .icon i{
+        display: block;
+    }
+
+}*/
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    nav {
+        display: none;
+    }
+
+    .icon {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+@media (max-width: 740px) {
+
+    .icon i {
+        display: block;
+    }
+
+    .hidden {
+        opacity: 0;
+    }
+
+}
